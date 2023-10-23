@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`detectMock()`](#detectmock)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -33,5 +35,27 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
+
+
+### detectMock()
+
+```typescript
+detectMock() => Promise<MockDetectorResult>
+```
+
+**Returns:** <code>Promise&lt;<a href="#mockdetectorresult">MockDetectorResult</a>&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### MockDetectorResult
+
+| Prop          | Type                 |
+| ------------- | -------------------- |
+| **`isMock`**  | <code>boolean</code> |
+| **`message`** | <code>string</code>  |
 
 </docgen-api>
